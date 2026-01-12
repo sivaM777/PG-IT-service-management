@@ -1,0 +1,39 @@
+{
+  "name": "ai-it-ticketing-backend",
+  "version": "1.0.0",
+  "description": "Modular Fastify backend for AI IT ticketing system",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "migrate": "tsx src/utils/migrate.ts",
+    "seed": "tsx src/utils/seed.ts",
+    "seed-rules": "tsx src/utils/seed-rules.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^9.3.1",
+    "@fastify/cors": "^9.0.1",
+    "@fastify/jwt": "^7.2.4",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.28.1",
+    "imap": "^0.8.19",
+    "mailparser": "^3.6.5",
+    "nodemailer": "^6.9.8",
+    "pg": "^8.11.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/imap": "^0.8.43",
+    "@types/mailparser": "^3.4.6",
+    "@types/node": "^22.10.2",
+    "@types/nodemailer": "^6.4.20",
+    "@types/pg": "^8.11.10",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.2"
+  }
+}
